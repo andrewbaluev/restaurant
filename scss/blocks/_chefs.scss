@@ -1,0 +1,66 @@
+.chefs {
+
+    .member {
+        text-align: center;
+        margin-bottom: 20px;
+        background: #343a40;
+        position: relative;
+        overflow: hidden;
+
+        &:hover .member-info {
+            background: linear-gradient(0deg, rgba(0, 0, 0, .7) 0%, rgba(0,0,0, 0) 100%);
+            opacity: 1;
+            bottom: 0px;
+        }
+        
+        &-info {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity .5s ease, bottom .5s ease;
+
+            &__descr {
+                margin-bottom: 10px;
+
+                h4 {
+                    font-weight: 700;
+                    margin-bottom: 2px;
+                    font-size: 18px;
+                    color: #fff;
+                }
+
+                span {
+                    font-style: italic;
+                    display: block;
+                    font-size: 13px;
+                    color: #fff;
+                }
+            }
+
+            &__social {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    transition: color 0.3s;
+                    color: #fff;
+                    margin: 0 10px;
+                    display: inline-block;
+
+                    &:hover {
+                        color: #cda45e;
+                    }
+                }
+
+                i {
+                    font-size: 18px;
+                    margin: 0 2px;
+                }
+            }
+        }
+    }
+}
